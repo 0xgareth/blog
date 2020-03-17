@@ -28,6 +28,9 @@ view back on the skyline of her hometown _Bookmarksgrove_, the headline of
 Lane. Pityful a rhetoric question ran over her cheek, then she continued her
 way. On her way she met a copy.
 
+Oh, and here's a great quote from this Wikipedia on
+[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
+
 ### Overlaid the jeepers uselessly much excluding
 
 But nothing the copy said could convince her and so it didn’t take long until a
@@ -107,3 +110,69 @@ to its own, safe country. But nothing the copy said could convince her and so it
 didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
 with Longe and Parole and dragged her into their agency, where they abused her
 for their projects again and again.
+
+> A salted duck egg is a Chinese preserved food product made by soaking duck
+> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
+> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
+> charcoal paste. The eggs may also be sold with the salted paste removed,
+> wrapped in plastic, and vacuum packed. From the salt curing process, the
+> salted duck eggs have a briny aroma, a gelatin-like egg white and a
+> firm-textured, round yolk that is bright orange-red in color.
+
+![Chinese Salty Egg](./salty_egg.jpg)
+
+``` jsx
+let Rectangle = {
+  resizeTopLeft(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeTopRight(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeBottomLeft(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeBottomRight(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+};
+
+let Oval = {
+  resizeLeft(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeRight(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeTop(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeBottom(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+};
+
+let Header = {
+  resizeLeft(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeRight(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },  
+}
+
+let TextBlock = {
+  resizeTopLeft(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeTopRight(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeBottomLeft(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+  resizeBottomRight(position, size, preserveAspect, dx, dy) {
+    // 10 repetitive lines of math
+  },
+};
+```
