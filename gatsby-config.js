@@ -6,7 +6,7 @@ module.exports = {
       summary: `Software engineer. Business neophyte. Full-time flaneur: Business, Logic, and Philosophy.`,
     },
     description: `Gareth Veale.`,
-    //siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`, TODO
+    siteUrl: `https://garethveale.dev/`,
     social: {
       twitter: `garethveale`,
     },
