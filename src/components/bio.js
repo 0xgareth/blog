@@ -46,7 +46,7 @@ const Bio = ({ location }) => {
         marginBottom: rhythm(0),
       }}
     >
-      <Image
+      {/* <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author.name}
         style={{
@@ -58,7 +58,7 @@ const Bio = ({ location }) => {
         imgStyle={{
           borderRadius: `50%`,
         }}
-      />
+      /> */}
       <p>
         {author.summary}
         {` `}
