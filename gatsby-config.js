@@ -3,7 +3,7 @@ module.exports = {
     title: `GARETH VEALE`,
     author: {
       name: `Gareth Veale.`,
-      summary: `Software engineer. Business neophyte. Full-time flaneur: Logic, and Philosophy. Pushing myself daily 💪.`,
+      summary: `Software engineer 💻. Business neophyte. Full-time flaneur. Pushing myself daily 💪.`,
     },
     description: `Gareth Veale.`,
     siteUrl: `https://garethveale.dev/`,
@@ -71,6 +71,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-use-dark-mode',
     {
       resolve: `gatsby-plugin-typography`,
       options: {

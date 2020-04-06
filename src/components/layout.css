@@ -1,3 +1,21 @@
 a {
   color:#0FA3B1;
 }
+
+body.dark-mode {
+  background-color: #282c35;
+  color: #fff;
+}
+
+body.dark-mode a {
+  color: #B38CD9;
+}
+
+body.dark-mode blockquote {
+  color: hsla(0,0%,100%,.9);
+  border-left: 0.32813rem solid hsla(0,0%,100%,.9);
+}
+
+body.dark-mode cite {
+  color: hsla(0,0%,100%,.9);
+}

@@ -2,8 +2,28 @@ import React from "react"
 import { Link } from "gatsby"
 import Bio from "../components/bio"
 import "./layout.css"
-
+import useDarkMode from "use-dark-mode"
+import Switch from "react-switch"
 import { rhythm, scale } from "../utils/typography"
+import sunIcon from "../assets/sun-icon.svg"
+import moonIcon from "../assets/moon-icon.svg"
+
+// const DarkModeToggle = () => {
+//   const darkMode = useDarkMode(false)
+
+//   return (
+//     <Switch
+//       onChange={darkMode.toggle}
+//       checked={darkMode.value}
+//       onColor="#222"
+//       offColor="#333"
+//       checkedIcon={<img src={moonIcon} alt="moon icon" />}
+//       uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+//       boxShadow="0 0 2px 3px #B38CD9"
+//       activeBoxShadow="0 0 2px 3px #dfb3e6"
+//     />
+//   )
+// }
 
 const Layout = ({ location, title, children, pageWidth }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -82,7 +102,7 @@ const Layout = ({ location, title, children, pageWidth }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}</header>
+      <header>{header}<DarkModeToggle /></header>
       <main>{children}</main>
       <footer>
         {footer}
