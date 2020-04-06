@@ -8,22 +8,22 @@ import { rhythm, scale } from "../utils/typography"
 import sunIcon from "../assets/sun-icon.svg"
 import moonIcon from "../assets/moon-icon.svg"
 
-// const DarkModeToggle = () => {
-//   const darkMode = useDarkMode(false)
+const DarkModeToggle = () => {
+  const darkMode = useDarkMode(false)
 
-//   return (
-//     <Switch
-//       onChange={darkMode.toggle}
-//       checked={darkMode.value}
-//       onColor="#222"
-//       offColor="#333"
-//       checkedIcon={<img src={moonIcon} alt="moon icon" />}
-//       uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
-//       boxShadow="0 0 2px 3px #B38CD9"
-//       activeBoxShadow="0 0 2px 3px #dfb3e6"
-//     />
-//   )
-// }
+  return (
+    <Switch
+      onChange={darkMode.toggle}
+      checked={darkMode.value}
+      onColor="#222"
+      offColor="#333"
+      checkedIcon={<img src={moonIcon} alt="moon icon" />}
+      uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+      boxShadow="0 0 2px 3px #B38CD9"
+      activeBoxShadow="0 0 2px 3px #dfb3e6"
+    />
+  )
+}
 
 const Layout = ({ location, title, children, pageWidth }) => {
   const rootPath = `${__PATH_PREFIX__}/`
