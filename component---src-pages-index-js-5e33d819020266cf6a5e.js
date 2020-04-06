@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{RXBc:function(e,t,n){"use strict";n.r(t),n.d(t,"pageQuery",(function(){return o}));var a=n("q1tI"),r=n.n(a),c=n("Bl7J"),i=n("vrFN");t.default=function(e){var t=e.location;return r.a.createElement("div",{style:{alignItems:"center",justifyContent:"center"}},r.a.createElement(c.a,{location:t,title:"GARETH VEALE."},r.a.createElement(i.a,{title:"Home"})))};var o="1097489062"}}]);
+//# sourceMappingURL=component---src-pages-index-js-5e33d819020266cf6a5e.js.map
