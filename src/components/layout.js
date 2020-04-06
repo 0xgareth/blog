@@ -9,7 +9,7 @@ import sunIcon from "../assets/sun-icon.svg"
 import moonIcon from "../assets/moon-icon.svg"
 
 const DarkModeToggle = () => {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(true)
 
   return (
     <Switch
@@ -19,8 +19,8 @@ const DarkModeToggle = () => {
       offColor="#333"
       checkedIcon={<img src={moonIcon} alt="moon icon" />}
       uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
-      boxShadow="0 0 2px 3px #B38CD9"
-      activeBoxShadow="0 0 2px 3px #dfb3e6"
+      boxShadow="0 0 2px 3px #95E06C"
+      activeBoxShadow="0 0 2px 3px #95E06C"
     />
   )
 }
@@ -28,6 +28,7 @@ const DarkModeToggle = () => {
 const Layout = ({ location, title, children, pageWidth }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
+  let headerWrapper
   let footer
 
   if (location.pathname === rootPath) {
@@ -36,10 +37,6 @@ const Layout = ({ location, title, children, pageWidth }) => {
         <h1
           style={{
             ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: '50%',
-            alignItems: 'center',
-            justifyContent: 'center',
           }}
         >
           <Link
@@ -58,6 +55,19 @@ const Layout = ({ location, title, children, pageWidth }) => {
         <a href='https://www.linkedin.com/in/garethveale/' target="_blank" rel="noopener noreferrer"> linkedin</a> • 
         <a href='https://twitter.com/garethveale' target="_blank" rel="noopener noreferrer"> twitter</a>
       </div>
+    )
+    headerWrapper = (
+      <header style={{ 
+        flexDirection: 'column', 
+        display: 'flex', 
+        marginBottom: rhythm(1.5),
+        marginTop: '50%',
+        alignItems: 'center',
+        justifyContent: 'center',}}
+      >
+        {header}
+        <DarkModeToggle />
+      </header>
     )
   } else {
     header = (
@@ -78,6 +88,15 @@ const Layout = ({ location, title, children, pageWidth }) => {
           {title}
         </Link>
       </h3>
+    )
+    headerWrapper = (
+      <header style={{ 
+        flexDirection: 'row', 
+        display: 'flex',
+        justifyContent: 'space-between' }}
+      >
+        {header}<DarkModeToggle />
+      </header>
     )
     footer = (
       <div
@@ -102,7 +121,7 @@ const Layout = ({ location, title, children, pageWidth }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}<DarkModeToggle /></header>
+      {headerWrapper}
       <main>{children}</main>
       <footer>
         {footer}

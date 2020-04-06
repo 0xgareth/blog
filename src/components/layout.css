@@ -3,12 +3,12 @@ a {
 }
 
 body.dark-mode {
-  background-color: #282c35;
+  background-color: #131B23;
   color: #fff;
 }
 
 body.dark-mode a {
-  color: #B38CD9;
+  color: #95E06C;
 }
 
 body.dark-mode blockquote {
