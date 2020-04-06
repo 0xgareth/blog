@@ -1,14 +1,16 @@
 ---
-title: Build and deploy your own blog with ease using GatsbyJS and GH Pages
+title: Build and deploy your personal blog using GatsbyJS and GH Pages
 date: "2015-05-28T22:40:32.169Z"
 description: Learn how to build your own blog using GatsbyJS and Gatsby Blog Starter.
-minread: "2"
+minread: "3"
+tags: ["coding"]
 ---
 
-I recently rebuilt my website using a scalable architecture, leveraging some of the
-more popular technologies (Flask, Docker, React) to enable me to host multiple applications
-under the same deployment (post about that incoming). One of these applications is the blog you're reading now, built with
-Gatsby JS, and it's super easy to do! Let me show you...
+I recently rebuilt my website using a scalable architecture, leveraging modern web technologies (Flask, Docker, React) enabling me 
+to host multiple applications under the same deployment (post on this incoming). One of these applications being the blog you're reading now, built with Gatsby JS. 
+This post is to show you how easy this is.
+
+> Familarity with JS, React adn GraphQL is a prerequisite.
 
 ### What is GatsbyJS?
 
@@ -29,18 +31,17 @@ and deploy faster. In order to create our blog we're going to use [gatsby-starte
 pages (and slugs) for each of the 'posts'. GraphQL is leveraged to query the static files for each of the requested items, resulting in a super fast final product. 
 
 ### Getting started
+To get started you'll want to iensure you have a recent version of Node.js installed.
 
-To get started you'll want to install gatsby.
+Install gatsby
 ``` 
 npm install gatsby
 ```
-
 
 Now clone down the gatsby-starter-blog repo.
 ``` 
 gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
 ```
-
 
 Fire up the site and start developing
 ```
@@ -53,65 +54,41 @@ querying your data using GraphQL.
 
 ### Some pointers
 
-- This however showed weasel
-- Well uncritical so misled
-- Well uncritical so misled
+- gatsby-config.js as the name states houses the site configurations, you can add additional gatsby plugins here & modify site metadata
+- gatsby-node.js contains the graphql query and js code that constructs a page for each markdown post
+- Blog posts are written in markdown and each live within a directoy, the name of which is used as the page slug
 
 ### Deploying to GH pages (for free)
 
+Create a repo to house your website ready for deployment.
 
-``` jsx
-let Rectangle = {
-  resizeTopLeft(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeTopRight(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeBottomLeft(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeBottomRight(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-};
-
-let Oval = {
-  resizeLeft(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeRight(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeTop(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeBottom(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-};
-
-let Header = {
-  resizeLeft(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeRight(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },  
+First, add the GitHub repo name to your gatsby-config.js file. Assuming your GitHub repo is called 'myBlog'...
+``` js
+module.exports = {
+  pathPrefix: "/myBlog",
 }
-
-let TextBlock = {
-  resizeTopLeft(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeTopRight(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeBottomLeft(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-  resizeBottomRight(position, size, preserveAspect, dx, dy) {
-    // 10 repetitive lines of math
-  },
-};
 ```
+Next, add a custom command deploy to your package.json file.
+
+``` js
+{
+  "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  }
+}
+```
+This creates a deploy command that creates a static version of your site with the prefix of /myBlog/ for every URL and then pushes the public directory using the gh-pages plugin.
+
+Next, add the GitHub repository as the origin remote to your Gatsby Git repository by running the following command:
+``` js
+git remote add origin https://username.github.com/myBlog
+```
+
+To build and deploy your site run the custom script
+
+``` js
+npm run deploy
+```
+This will push the data to the gh-pages branch of your repository, without adding any commits to other branches. Almost instantly after the push, you can view your served pages on username.github.io/myBlog.
+
+If you own a domain you can associate it with this hosted GH repo to change the default domain - [this](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site) link has detailed instructions.
