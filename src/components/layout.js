@@ -9,7 +9,7 @@ import sunIcon from "../assets/sun-icon.svg"
 import moonIcon from "../assets/moon-icon.svg"
 
 const DarkModeToggle = () => {
-  const darkMode = useDarkMode(true)
+  const darkMode = useDarkMode(false)
 
   return (
     <Switch
@@ -19,8 +19,8 @@ const DarkModeToggle = () => {
       offColor="#333"
       checkedIcon={<img src={sunIcon} alt="sun icon" /> }
       uncheckedIcon={<img src={moonIcon} alt="moon icon" />}
-      boxShadow="0 0 2px 3px #95E06C"
-      activeBoxShadow="0 0 2px 3px #55D6BE"
+      boxShadow="0 0 2px 2px grey"
+      activeBoxShadow="0 0 2px 2px grey"
     />
   )
 }
