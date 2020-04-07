@@ -17,10 +17,10 @@ const DarkModeToggle = () => {
       checked={darkMode.value}
       onColor="#222"
       offColor="#333"
-      checkedIcon={<img src={moonIcon} alt="moon icon" />}
-      uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+      checkedIcon={<img src={sunIcon} alt="sun icon" /> }
+      uncheckedIcon={<img src={moonIcon} alt="moon icon" />}
       boxShadow="0 0 2px 3px #95E06C"
-      activeBoxShadow="0 0 2px 3px #95E06C"
+      activeBoxShadow="0 0 2px 3px #55D6BE"
     />
   )
 }

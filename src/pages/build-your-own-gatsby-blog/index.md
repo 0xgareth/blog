@@ -14,7 +14,7 @@ This post is to show you how easy this is.
 
 ### What is GatsbyJS?
 
-[Gatsby]() is a React-based static site generator, powered by [GraphQL](). It weaves together parts of React - 
+[Gatsby](https://www.gatsbyjs.org/) is a React-based static site generator, powered by [GraphQL](https://graphql.org/). It weaves together parts of React - 
 specifically webpack, react-router, GraphQL (among others) - into an easy to use development framework.
 The term static site generator may be a bit misleading, Gatsby is far more like a modern front-end framework
 and can be used to build progressive web apps.
@@ -63,7 +63,7 @@ querying your data using GraphQL.
 Create a repo to house your website ready for deployment.
 
 First, add the GitHub repo name to your gatsby-config.js file. Assuming your GitHub repo is called 'myBlog'...
-``` js
+``` jsg
 module.exports = {
   pathPrefix: "/myBlog",
 }
