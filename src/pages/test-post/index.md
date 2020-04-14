@@ -1,10 +1,9 @@
 ---
-title: Build and deploy your personal blog using GatsbyJS and GH Pages
-date: "2015-05-28T22:40:32.169Z"
-description: Learn how to build your own blog using GatsbyJS and Gatsby Blog Starter.
+title: Another test
+date: "2017-05-28T22:40:32.169Z"
+description: Another test
 minread: "3"
 tags: 
-  - gatsby
   - test
 category:
   - programming
