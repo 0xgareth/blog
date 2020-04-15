@@ -45,6 +45,29 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio location={location}/>
+      
+      {/* links */}
+      <div 
+        style={{ 
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-evenly`,
+          listStyle: `none`,
+          padding: 0,
+        }}>
+        <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
+         • all posts by date • 
+        </Link>
+        {Object.keys(tagPostData).map((tag) => {
+          return( 
+            <Link style={{ boxShadow: `none` }} to={`/tags/${tag}`}>
+             • {tag} • 
+            </Link>
+          )
+        })}
+      </div>
+
+      {/* posts */}
       {Object.entries(tagPostData).map(([key, value]) =>{
         const posts = value.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -62,22 +85,19 @@ const BlogIndex = ({ data, location }) => {
                 </h3>
                 <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
               </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
             </article>
           )
-        })
-        return (
-          <div>
-            <h2>{key}</h2>
-            {posts}
-          </div>
-        )
+          })
+          return (
+            <div>
+              <h2
+                style={{}}
+              >
+                {key}
+              </h2>
+              {posts}
+            </div>
+          )
       })}
     </Layout>
   )

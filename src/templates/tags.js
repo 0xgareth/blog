@@ -3,6 +3,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Bio from "../components/bio"
 
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
@@ -13,6 +14,25 @@ const Tags = ({ pageContext, data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={tagHeader} />
+      <Bio location={location}/>
+
+      {/* links */}
+      <div 
+        style={{ 
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-evenly`,
+          listStyle: `none`,
+          padding: 0,
+        }}>
+        <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
+         • all posts by date • 
+        </Link>
+        <Link style={{ boxShadow: `none` }} to={'/posts'}>
+         • all posts by category • 
+        </Link>
+      </div>
+
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -25,7 +45,6 @@ const Tags = ({ pageContext, data, location }) => {
           )
         })}
       </ul>
-      <Link to="/tags">All tags</Link>
     </Layout>
   )
 }

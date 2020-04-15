@@ -105,9 +105,9 @@ const Layout = ({ location, title, children, pageWidth }) => {
         }}
       >
         <p>
-          <Link to={`https://github.com/garethiv`}>github</Link> • 
-          <Link to={`https://www.linkedin.com/in/garethveale/`}>linkedin</Link> • 
-          <Link to={`https://twitter.com/garethveale`}>twitter</Link>
+          <a href='https://github.com/garethiv' target="_blank" rel="noopener noreferrer">github</a> • 
+          <a href='https://www.linkedin.com/in/garethveale/' target="_blank" rel="noopener noreferrer"> linkedin</a> • 
+          <a href='https://twitter.com/garethveale' target="_blank" rel="noopener noreferrer"> twitter</a>
         </p>
       </div>
     )

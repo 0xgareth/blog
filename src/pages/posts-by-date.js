@@ -9,11 +9,48 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
+  let tags = []
+  posts.forEach((post, _) => {
+    if (post.node.frontmatter.tags) {
+      tags = tags.concat(post.node.frontmatter.tags)
+    }
+  })
+
+  const getUnique = arrArg => {
+    return arrArg.filter((elem, pos, arr) => {
+      return arr.indexOf(elem) === pos
+    })
+  }
+
+  tags = getUnique(tags)
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio location={location}/>
 
+      {/* links */}
+      <div 
+        style={{ 
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-evenly`,
+          listStyle: `none`,
+          padding: 0,
+        }}>
+        <Link style={{ boxShadow: `none` }} to={'/posts'}>
+         • all posts by category • 
+        </Link>
+        {tags.map(tag => {
+          return( 
+            <Link style={{ boxShadow: `none` }} to={`/tags/${tag}`}>
+             • {tag} • 
+            </Link>
+          )
+        })}
+      </div>
+
+      {/* posts */}
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
