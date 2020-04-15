@@ -9,7 +9,6 @@ import { rhythm, scale } from "../utils/typography"
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const tags = post.frontmatter.tags || []
   const { previous, next } = pageContext
 
   return (
@@ -49,24 +48,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <Bio location={location} />
         </footer>
       </article>
-
-      <div>
-        tags:
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-around`,
-            listStyle: `none`
-          }}
-        >
-          {tags.map(t => (
-            <li key={kebabCase(t)}>
-              <Link to={`/tags/${kebabCase(t)}`}>{t}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
 
       <nav>
         <ul

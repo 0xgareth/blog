@@ -34,49 +34,38 @@ const BlogIndex = ({ data, location }) => {
         style={{ 
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `space-evenly`,
+          justifyContent: `space-between`,
           listStyle: `none`,
           padding: 0,
+          marginBottom: '3em'
         }}>
         <Link style={{ boxShadow: `none` }} to={'/posts'}>
-         • all posts by category • 
+         Posts by category
         </Link>
         {tags.map(tag => {
+          const path = tag.toLowerCase()
           return( 
-            <Link style={{ boxShadow: `none` }} to={`/tags/${tag}`}>
-             • {tag} • 
+            <Link style={{ boxShadow: `none` }} to={`/tags/${path}`}>
+             {tag}
             </Link>
           )
         })}
       </div>
-
+      <h3>Posts by date</h3>
+      <ul>
       {/* posts */}
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+        const slug = node.fields.slug
         return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
+          <li key={slug}>
+            <Link to={slug}>{title}</Link>
+            <br/>
+            <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
+          </li>
         )
       })}
+      </ul>
     </Layout>
   )
 }

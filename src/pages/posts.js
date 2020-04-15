@@ -51,54 +51,48 @@ const BlogIndex = ({ data, location }) => {
         style={{ 
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `space-evenly`,
+          justifyContent: `space-between`,
           listStyle: `none`,
           padding: 0,
         }}>
         <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
-         • all posts by date • 
+         Posts by date
         </Link>
         {Object.keys(tagPostData).map((tag) => {
+          const path = tag.toLowerCase()
           return( 
-            <Link style={{ boxShadow: `none` }} to={`/tags/${tag}`}>
-             • {tag} • 
+            <Link style={{ boxShadow: `none` }} to={`/tags/${path}`}>
+             {tag}
             </Link>
           )
         })}
       </div>
-
+      <ul>
       {/* posts */}
       {Object.entries(tagPostData).map(([key, value]) =>{
         const posts = value.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          const slug =  node.fields.slug
           return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
-              </header>
-            </article>
+            <li key={slug}>
+              <Link to={slug}>{title}</Link>
+              <br/>
+              <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
+            </li>
           )
           })
           return (
             <div>
-              <h2
+              <h3
                 style={{}}
               >
                 {key}
-              </h2>
+              </h3>
               {posts}
             </div>
           )
       })}
+      </ul>
     </Layout>
   )
 }

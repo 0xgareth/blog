@@ -4,7 +4,7 @@ date: "2016-05-28T22:40:32.169Z"
 description: Test post
 minread: "3"
 tags: 
-  - test
+  - Test
 category:
   - programming
 ---

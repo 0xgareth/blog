@@ -1,34 +1,49 @@
 a {
   color:#0FA3B1;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0em;
+}
+
+.react-icons {
+  text-decoration: none;
 }
 
 body.dark-mode {
-  background-color: #fff;
-  color: black;
-}
-
-body.dark-mode a {
-  color: #0FA3B1;
-}
-
-body.dark-mode blockquote {
-  color: black;
-  border-left: 0.32813rem solid black;
-}
-
-body.dark-mode cite {
-  color: black;
-}
-
-body.light-mode {
+  /* background-color: #fff;
+  color: black; */
   background-color: #131B23;
   color: #fff;
 }
 
-body.light-mode a {
+body.dark-mode a {
+  /* color: #0FA3B1; */
   color: #95E06C;
 }
 
+body.dark-mode blockquote {
+  /* color: black;
+  border-left: 0.32813rem solid black; */
+  color: hsla(0,0%,100%,.9);
+  border-left: 0.32813rem solid hsla(0,0%,100%,.9);
+}
+
+body.dark-mode cite {
+  /* color: black; */
+  color: hsla(0,0%,100%,.9);
+}
+
+/* body.light-mode {
+  background-color: #131B23;
+  color: #fff;
+} */
+
+/* body.light-mode a {
+  color: #95E06C;
+} */
+/* 
 body.light-mode blockquote {
   color: hsla(0,0%,100%,.9);
   border-left: 0.32813rem solid hsla(0,0%,100%,.9);
@@ -36,4 +51,4 @@ body.light-mode blockquote {
 
 body.light-mode cite {
   color: hsla(0,0%,100%,.9);
-}
+} */

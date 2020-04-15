@@ -21,19 +21,19 @@ const Tags = ({ pageContext, data, location }) => {
         style={{ 
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `space-evenly`,
+          justifyContent: `space-between`,
           listStyle: `none`,
           padding: 0,
         }}>
-        <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
-         • all posts by date • 
-        </Link>
         <Link style={{ boxShadow: `none` }} to={'/posts'}>
-         • all posts by category • 
+         Posts by category
+        </Link>
+        <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
+          Posts by date
         </Link>
       </div>
 
-      <h1>{tagHeader}</h1>
+      <h3>{tagHeader}</h3>
       <ul>
         {edges.map(({ node }) => {
           const { slug } = node.fields
@@ -41,6 +41,8 @@ const Tags = ({ pageContext, data, location }) => {
           return (
             <li key={slug}>
               <Link to={slug}>{title}</Link>
+              <br/>
+              <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
             </li>
           )
         })}
@@ -71,6 +73,8 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            minread
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }
