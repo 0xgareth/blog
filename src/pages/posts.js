@@ -49,7 +49,7 @@ const BlogIndex = ({ data, location }) => {
       </div>
       {/* <Bio location={location}/> */}
       <p>
-      This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/test'}>technology</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>innovation</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>business</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>mindset</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>productivity</Link> and more.
+      This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/technology'}>technology</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/programming'}>programming</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/business-and-innovation'}>business and innovation</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/mindset'}>mindset</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/productivity'}>productivity</Link> and more.
       You will find articles about technology and innovation in business and beyond, having and curating a growth mindset, and techniques for productivity.
       </p>
 

@@ -4,9 +4,7 @@ date: "2015-05-28T22:40:32.169Z"
 description: Learn how to build your own blog using GatsbyJS and Gatsby Blog Starter.
 minread: "3"
 tags: 
-  - Gatsby
-category:
-  - programming
+  - Programming
 ---
 
 I recently rebuilt my website using a scalable architecture, leveraging modern web technologies (Flask, Docker, React) enabling me 
