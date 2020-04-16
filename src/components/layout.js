@@ -20,7 +20,7 @@ const DarkModeToggle = () => {
       onColor="#222"
       offColor="#333"
       checkedIcon={<img src={moonIcon} alt="moon icon" />}
-      uncheckedIcon={<img src={sunIcon} alt="sun icon" /> }
+      uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
       boxShadow="0 0 2px 2px grey"
       activeBoxShadow="0 0 2px 2px grey"
     />
@@ -71,7 +71,8 @@ const Layout = ({ location, title, children, pageWidth }) => {
         style ={{
           display: 'flex',
           justifyContent: 'center',
-          marginTop: '2em'
+          marginTop: '2em',
+          marginRight: '2em'
         }}
         >
           <DarkModeToggle />

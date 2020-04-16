@@ -27,8 +27,9 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio location={location}/>
-
+      <div style={{  }}>
+        <h3>Notes by date</h3>
+      </div>
       {/* links */}
       <div 
         style={{ 
@@ -39,19 +40,12 @@ const BlogIndex = ({ data, location }) => {
           padding: 0,
           marginBottom: '3em'
         }}>
-        <Link style={{ boxShadow: `none` }} to={'/posts'}>
-         Posts by category
-        </Link>
-        {tags.map(tag => {
-          const path = tag.toLowerCase()
-          return( 
-            <Link style={{ boxShadow: `none` }} to={`/tags/${path}`}>
-             {tag}
-            </Link>
-          )
-        })}
+        <p style={{margin: '0'}}>→ 
+          <Link style={{ boxShadow: `none` }} to={'/posts'}>
+          Notes by category
+          </Link>
+        </p>
       </div>
-      <h3>Posts by date</h3>
       <ul>
       {/* posts */}
       {posts.map(({ node }) => {

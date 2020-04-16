@@ -44,8 +44,15 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio location={location}/>
-      
+      <div style={{  }}>
+        <h3>Notes</h3>
+      </div>
+      {/* <Bio location={location}/> */}
+      <p>
+      This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/test'}>technology</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>innovation</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>business</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>mindset</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/test'}>productivity</Link> and more.
+      You will find articles about technology and innovation in business and beyond, having and curating a growth mindset, and techniques for productivity.
+      </p>
+
       {/* links */}
       <div 
         style={{ 
@@ -55,18 +62,13 @@ const BlogIndex = ({ data, location }) => {
           listStyle: `none`,
           padding: 0,
         }}>
-        <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
-         Posts by date
-        </Link>
-        {Object.keys(tagPostData).map((tag) => {
-          const path = tag.toLowerCase()
-          return( 
-            <Link style={{ boxShadow: `none` }} to={`/tags/${path}`}>
-             {tag}
-            </Link>
-          )
-        })}
+        <p style={{margin:'0'}}>→ 
+          <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
+          Notes by date
+          </Link>
+        </p>
       </div>
+
       <ul>
       {/* posts */}
       {Object.entries(tagPostData).map(([key, value]) =>{

@@ -14,26 +14,22 @@ const Tags = ({ pageContext, data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={tagHeader} />
-      <Bio location={location}/>
-
+      <h3>{tagHeader}</h3>
       {/* links */}
       <div 
         style={{ 
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `space-between`,
           listStyle: `none`,
           padding: 0,
+          flexDirection: `column`
         }}>
-        <Link style={{ boxShadow: `none` }} to={'/posts'}>
-         Posts by category
-        </Link>
-        <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
-          Posts by date
-        </Link>
+        <p>→ 
+          <Link style={{ boxShadow: `none` }} to={'/posts'}>
+          Notes
+          </Link>
+        </p>
       </div>
-
-      <h3>{tagHeader}</h3>
       <ul>
         {edges.map(({ node }) => {
           const { slug } = node.fields

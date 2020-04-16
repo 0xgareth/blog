@@ -3,7 +3,7 @@ module.exports = {
     title: `GARETH VEALE`,
     author: {
       name: `Gareth Veale.`,
-      summary: `Software engineer 💻. Business and technology enthusiast. Full-time flaneur. Striving & propsering.`,
+      summary: `Software engineer 💻. Business and technology enthusiast. Read my notes about technology, innovation, business, and productivity.`,
     },
     description: `Gareth Veale.`,
     siteUrl: `https://garethveale.dev/`,
