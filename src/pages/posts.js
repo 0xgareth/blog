@@ -76,11 +76,11 @@ const BlogIndex = ({ data, location }) => {
           const title = node.frontmatter.title || node.fields.slug
           const slug =  node.fields.slug
           return (
-            <li key={slug}>
+            <ol key={slug}>
               <Link to={slug}>{title}</Link>
               <br/>
               <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
-            </li>
+            </ol>
           )
           })
           return (

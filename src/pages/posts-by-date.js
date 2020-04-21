@@ -30,33 +30,17 @@ const BlogIndex = ({ data, location }) => {
       <div style={{  }}>
         <h3>Notes by date</h3>
       </div>
-      {/* links */}
-      <div 
-        style={{ 
-          display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-between`,
-          listStyle: `none`,
-          padding: 0,
-          marginBottom: '3em'
-        }}>
-        <p style={{margin: '0'}}>→ 
-          <Link style={{ boxShadow: `none` }} to={'/posts'}>
-          Notes by category
-          </Link>
-        </p>
-      </div>
       <ul>
       {/* posts */}
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         const slug = node.fields.slug
         return (
-          <li key={slug}>
+          <ol key={slug}>
             <Link to={slug}>{title}</Link>
             <br/>
             <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
-          </li>
+          </ol>
         )
       })}
       </ul>

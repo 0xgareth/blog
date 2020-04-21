@@ -15,31 +15,16 @@ const Tags = ({ pageContext, data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title={tagHeader} />
       <h3>{tagHeader}</h3>
-      {/* links */}
-      <div 
-        style={{ 
-          display: `flex`,
-          flexWrap: `wrap`,
-          listStyle: `none`,
-          padding: 0,
-          flexDirection: `column`
-        }}>
-        <p>→ 
-          <Link style={{ boxShadow: `none` }} to={'/posts'}>
-          Notes
-          </Link>
-        </p>
-      </div>
       <ul>
         {edges.map(({ node }) => {
           const { slug } = node.fields
           const { title } = node.frontmatter
           return (
-            <li key={slug}>
+            <ol key={slug}>
               <Link to={slug}>{title}</Link>
               <br/>
               <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
-            </li>
+            </ol>
           )
         })}
       </ul>
