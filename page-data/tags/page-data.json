@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-tags-js","path":"/tags/","result":{"data":{"site":{"id":"Site","siteMetadata":{"title":"GARETH VEALE"}},"allMarkdownRemark":{"group":[{"fieldValue":"Productivity","totalCount":1},{"fieldValue":"Programming","totalCount":1}]}},"pageContext":{}}}
+{"componentChunkName":"component---src-pages-tags-js","path":"/tags/","result":{"data":{"site":{"siteMetadata":{"title":"GARETH VEALE"}},"allMarkdownRemark":{"group":[{"fieldValue":"Productivity","totalCount":1},{"fieldValue":"Programming","totalCount":1}]}},"pageContext":{}}}
