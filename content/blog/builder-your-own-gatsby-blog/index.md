@@ -1,11 +1,13 @@
 ---
-title: Build and deploy your personal blog using GatsbyJS and GH Pages
-date: "2015-05-28T22:40:32.169Z"
-description: Learn how to build your own blog using GatsbyJS and Gatsby Blog Starter.
-minread: "3"
+title: "Build and deploy your personal blog using GatsbyJS and GH Pages"
+date: "2020-05-28T22:40:32.169Z"
+description: "Learn how to build your own blog using GatsbyJS and Gatsby Blog Starter."
+minread: 3
+type: blog
 tags: 
-  - Programming
+  - programming
 ---
+
 
 I recently rebuilt my website using a scalable architecture, leveraging modern web technologies (Flask, Docker, React) enabling me 
 to host multiple applications under the same deployment (post on this incoming). One of these applications being the blog you're reading now, built with Gatsby JS. 

@@ -29,24 +29,19 @@ const PostsByDate = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
         <SEO title="Index" />
         <div style={{  }}>
-            <h3>Notes by date</h3>
+            <h3>Books</h3>
         </div>
+        <p>
+        This page shares notes i've taken from some of the more recent books i've read. Similar to Derek Sivers i've given each a rating out of 10 on how likely I am to recommend it to others.
+        </p>
 
-        {/* links */}
-        <div 
-          style={{ 
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: '0',
-          }}>
-          <p style={{marginBottom:'2em'}}>← 
-            <Link style={{ boxShadow: `none` }} to={'/posts'}>
-            Notes
-            </Link>
-          </p>
-        </div>
+        <p>
+        Below the notes are sorted in date ascending order, or you can browse by genre.
+        </p>
+
+        <p>
+        <Link style={{ boxShadow: `none` }} to={'/genre/fiction'}>Fiction</Link>
+        </p>
 
         <ul>
         {posts.map(({ node }) => {
@@ -76,7 +71,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { type: { in: ["blog"] } } }
+      filter: { frontmatter: { type: { in: ["book"] } } }
       ) {
       edges {
         node {

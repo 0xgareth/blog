@@ -1,20 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
-import Bio from "../components/bio"
+import Bio from "./bio"
 import "./layout.css"
+import { IconContext } from "react-icons"
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { rhythm, scale } from "../utils/typography"
 import useDarkMode from "use-dark-mode"
 import Switch from "react-switch"
-import { rhythm, scale } from "../utils/typography"
-import sunIcon from "../assets/sun-icon.svg"
-import moonIcon from "../assets/moon-icon.svg"
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import { IconContext } from "react-icons";
+import sunIcon from "../../content/assets/sun-icon.svg"
+import moonIcon from "../../content/assets/moon-icon.svg"
 
 const DarkModeToggle = () => {
   const darkMode = useDarkMode(false)
 
   return (
-    <Switch
+    <Switch 
       onChange={darkMode.toggle}
       checked={darkMode.value}
       onColor="#222"
@@ -27,11 +27,11 @@ const DarkModeToggle = () => {
   )
 }
 
-const Layout = ({ location, title, children, pageWidth }) => {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
-  let headerWrapper
   let footer
+  let headerWrapper
 
   if (location.pathname === rootPath) {
     header = (
@@ -44,7 +44,6 @@ const Layout = ({ location, title, children, pageWidth }) => {
           <Link
             style={{
               boxShadow: `none`,
-              textDecoration: `none`,
               color: `inherit`,
             }}
             to={`/`}
@@ -53,29 +52,37 @@ const Layout = ({ location, title, children, pageWidth }) => {
           </Link>
         </h1>
         <Bio location={location} />
+        <Link to={`/posts`}>Notes →</Link>
+        <br/>
+        <br/>
+        <Link to={`/books`}>Book Notes →</Link>
+        <br/>
+        <br/>
         <div
-        style ={{
-          display: 'flex',
-          justifyContent: 'center',
-        }}
+          style={{
+            display: 'flex',
+            justifyContent:'center',
+          }}
         >
           <IconContext.Provider value={{ size: '2em', style: { textDecoration: 'none' } }}>
-            <div style={{ textDecoration: 'none' }}>
-              <a style={{ marginRight: '2em', textDecoration: 'none' }} href='https://github.com/garethiv' target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-              <a style={{ marginRight: '2em', textDecoration: 'none' }} href='https://www.linkedin.com/in/garethveale/' target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-              <a style={{ marginRight: '2em', textDecoration: 'none' }} href='https://twitter.com/garethveale' target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <div>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             </div>
           </IconContext.Provider>
-        </div>
-        <div
-        style ={{
-          display: 'flex',
-          justifyContent: 'center',
-          marginTop: '2em',
-          marginRight: '2em'
-        }}
-        >
-          <DarkModeToggle />
+          </div>
+          
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '2em',
+              marginRight: '2em'
+            }}
+          >
+            <DarkModeToggle />
+          
         </div>
       </div>
     )
@@ -102,7 +109,6 @@ const Layout = ({ location, title, children, pageWidth }) => {
         <Link
           style={{
             boxShadow: `none`,
-            textDecoration: `none`,
             color: `inherit`,
           }}
           to={`/`}
@@ -123,17 +129,17 @@ const Layout = ({ location, title, children, pageWidth }) => {
     )
     footer = (
       <div
-        style ={{
+        style={{
           display: 'flex',
-          justifyContent: 'center',
-          marginTop: location.pathname.includes('posts') || location.pathname.includes('tags') ? '4em' : '0em'
+          justifyContent:'center',
+          marginTop: location.pathname.includes('posts') ? '4em' : '0em'
         }}
       >
         <IconContext.Provider value={{ size: '2em', style: { textDecoration: 'none' } }}>
-          <div style={{ textDecoration: 'none' }}>
-            <a style={{ marginRight: '2em', textDecoration: 'none' }} href='https://github.com/garethiv' target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-            <a style={{ marginRight: '2em', textDecoration: 'none' }} href='https://www.linkedin.com/in/garethveale/' target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-            <a style={{ marginRight: '2em', textDecoration: 'none' }} href='https://twitter.com/garethveale' target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <div>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
           </div>
         </IconContext.Provider>
       </div>
@@ -144,15 +150,13 @@ const Layout = ({ location, title, children, pageWidth }) => {
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: pageWidth ? rhythm(pageWidth) : rhythm(24),
+        maxWidth: rhythm(24),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      {headerWrapper}
+      <header>{headerWrapper}</header>
       <main>{children}</main>
-      <footer>
-        {footer}
-      </footer>
+      <footer>{footer}</footer>
     </div>
   )
 }

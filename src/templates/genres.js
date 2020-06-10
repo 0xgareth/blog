@@ -1,20 +1,20 @@
 import React from "react"
-
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Tags = ({ pageContext, data, location }) => {
-  const { tag } = pageContext
+  const { genre } = pageContext
   const { edges } = data.allMarkdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const tagHeader = `${tag}`
-  const formattedHeader = tagHeader.slice(0,1).toUpperCase() + tagHeader.slice(1, tagHeader.length)
+  const genreHeader = `${genre}`
+  const formattedHeader = genreHeader.slice(0,1).toUpperCase() + genreHeader.slice(1, genreHeader.length)
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={formattedHeader} />
       <h3>{formattedHeader}</h3>
+
       {/* links */}
       <div 
         style={{ 
@@ -25,8 +25,8 @@ const Tags = ({ pageContext, data, location }) => {
           padding: '0',
         }}>
         <p style={{marginBottom:'2em'}}>← 
-          <Link style={{ boxShadow: `none` }} to={'/posts'}>
-          Notes
+          <Link style={{ boxShadow: `none` }} to={'/books'}>
+          Books
           </Link>
         </p>
       </div>
@@ -51,7 +51,7 @@ const Tags = ({ pageContext, data, location }) => {
 export default Tags
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($genre: String) {
     site {
       siteMetadata {
         title
@@ -60,7 +60,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { genre: { in: [$genre] } } }
     ) {
       totalCount
       edges {

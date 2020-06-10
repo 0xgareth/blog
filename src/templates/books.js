@@ -10,6 +10,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const genre = String(post.frontmatter.genre)
+  const formattedGenre = genre.slice(0,1).toUpperCase() + genre.slice(1, genre.length)
+
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -31,10 +34,37 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             style={{
               ...scale(-1 / 5),
               display: `block`,
+              marginBottom: rhythm(0.01),
+            }}
+          >
+            Date: {post.frontmatter.date}
+          </p>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+              marginBottom: rhythm(0.01),
+            }}
+          >
+            Rating: {post.frontmatter.rating}/10
+          </p>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+              marginBottom: rhythm(0.01),
+            }}
+          >
+            Date published: {post.frontmatter.published}
+          </p>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            Genre: {formattedGenre}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -81,7 +111,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BookPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -95,6 +125,10 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        minread
+        rating
+        genre
+        published(formatString: "MMMM DD, YYYY")
       }
     }
   }

@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
-import Bio from "../components/bio"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
+const Posts = ({ data, location }) => {
   let tagPostData = {}
   const siteTitle = data.site.siteMetadata.title
   const posts     = data.allMarkdownRemark.edges
@@ -43,14 +43,12 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Index" />
       <div style={{  }}>
         <h3>Notes</h3>
       </div>
-      {/* <Bio location={location}/> */}
       <p>
-      This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/technology'}>technology</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/programming'}>programming</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/business-and-innovation'}>business and innovation</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/mindset'}>mindset</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/productivity'}>productivity</Link> and more.
-      You will find articles about technology and innovation in business and beyond, having and curating a growth mindset, and techniques for productivity.
+        This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/programming'}>programming</Link>, business and <Link style={{ boxShadow: `none` }} to={'/tags/productivity'}>productivity</Link>.
       </p>
 
       {/* links */}
@@ -62,7 +60,7 @@ const BlogIndex = ({ data, location }) => {
           listStyle: `none`,
           padding: 0,
         }}>
-        <p style={{margin:'0'}}>→ 
+        <p style={{marginBottom:'0em'}}>→ 
           <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
           Notes by date
           </Link>
@@ -72,9 +70,11 @@ const BlogIndex = ({ data, location }) => {
       <ul>
       {/* posts */}
       {Object.entries(tagPostData).map(([key, value]) =>{
+        const formattedHeader = key.slice(0,1).toUpperCase() + key.slice(1, key.length)
         const posts = value.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const slug =  node.fields.slug
+          
           return (
             <ol key={slug}>
               <Link to={slug}>{title}</Link>
@@ -88,7 +88,7 @@ const BlogIndex = ({ data, location }) => {
               <h3
                 style={{}}
               >
-                {key}
+                {formattedHeader}
               </h3>
               {posts}
             </div>
@@ -98,8 +98,8 @@ const BlogIndex = ({ data, location }) => {
     </Layout>
   )
 }
-
-export default BlogIndex
+  
+export default Posts
 
 export const pageQuery = graphql`
   query {
@@ -108,7 +108,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { type: { in: ["blog"] } } }
+    ) {
       edges {
         node {
           excerpt
@@ -119,8 +122,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            minread
             tags
+            minread
           }
         }
       }
