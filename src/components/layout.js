@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Bio from "./bio"
 import "./layout.css"
 import { IconContext } from "react-icons"
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaEnvelope } from "react-icons/fa";
 import { rhythm, scale } from "../utils/typography"
 import useDarkMode from "use-dark-mode"
 import Switch from "react-switch"
@@ -75,6 +75,7 @@ const Layout = ({ location, title, children }) => {
               <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
               <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
               <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="mailto:someone@example.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
             </div>
           </IconContext.Provider>
           </div>
@@ -146,6 +147,7 @@ const Layout = ({ location, title, children }) => {
             <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
             <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="mailto:someone@example.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
           </div>
         </IconContext.Provider>
       </div>

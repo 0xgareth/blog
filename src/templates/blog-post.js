@@ -19,14 +19,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
-          <h1
+          <h2
             style={{
               marginTop: rhythm(1),
               marginBottom: 0,
             }}
           >
             {post.frontmatter.title}
-          </h1>
+          </h2>
           <p
             style={{
               ...scale(-1 / 5),
@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {post.frontmatter.date} • {post.frontmatter.minread} min read  ☕
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -95,6 +95,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        minread
       }
     }
   }

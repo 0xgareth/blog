@@ -79,7 +79,7 @@ const Posts = ({ data, location }) => {
             <ol key={slug}>
               <Link to={slug}>{title}</Link>
               <br/>
-              <small>{node.frontmatter.date} • <span role="img" aria-label="coffee">☕</span> {node.frontmatter.minread} min read</small>
+              <small>{node.frontmatter.date} • {node.frontmatter.minread} min read <span role="img" aria-label="coffee">☕</span> </small>
             </ol>
           )
           })

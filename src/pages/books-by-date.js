@@ -32,7 +32,7 @@ const PostsByDate = ({ data, location }) => {
             <h3>Books</h3>
         </div>
         <p>
-        <Link style={{ boxShadow: `none` }} to={'/books-by-date'}>> Sort by date</Link>
+        <Link style={{ boxShadow: `none` }} to={'/books'}>> Sort by rating</Link>
         </p>
         <p>
         <Link style={{ boxShadow: `none` }} to={'/genre/fiction'}>→ Fiction</Link>
@@ -77,7 +77,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___rating], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { type: { in: ["book"] } } }
       ) {
       edges {
