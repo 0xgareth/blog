@@ -52,10 +52,16 @@ const Layout = ({ location, title, children }) => {
           </Link>
         </h1>
         <Bio location={location} />
-        <Link to={`/posts`}>Notes →</Link>
-        <br/>
-        <br/>
-        <Link to={`/books`}>Book Notes →</Link>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent:'space-between',
+          }}
+        >
+          <Link to={`/posts`}>Notes →</Link>
+
+          <Link to={`/books`}>← Books</Link>
+        </div>
         <br/>
         <br/>
         <div
