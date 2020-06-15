@@ -39,39 +39,39 @@ Roam has a few key features that make it so powerful, i’ll cover each briefly 
 
 The bi-directional links are the magic in Roam. You can think of them as hyperlinks to each of your notes. You can create these by highlighting text and double clicking [[, this constructs a new page for that word (if one doesn’t exist), or simply links to the page with that name. Below I have added 2 [] around the word ‘free will’, this creates a clickable link.
 
-IMAGE
+![links1small](./links1small.jpg)
 
 As you can see, once you click this link, a page is created and it’s reference is presented at the bottom.
 
-IMAGE
+![links2small](./links2small.jpg)
 
 **Filtering/searching**
 
 You can also filter the active note to only display relevant links/information. You can also see that each time you create a checkbox (by type /todo) they will be filterable, and once you check them off, they are tagged as ‘done’. Futher, you can search each of your notes for keywords etc.
 
-IMAGE
+![unfiltered](./unfiltered.jpg)
 
 Filtering on ‘DONE’ will hide all but these bullet points (‘DONE’ is set automatially when you tick off a ‘TODO’). Of course, this isn’t just applicable to bullet points, but also to any links within a page.
 
-IMAGE
+![filtered](./filtered.jpg)
 
 **Mind Mapping**
 
 Roam has a ‘Graph Overview’ feature which automatically create a graph (or mind map) of the relationships between your notes. Allowing you to visualise this network of knowledge previously discussed. The image below shows the relationships between one of my week plan notes, and the daily notes (see below) referened within.
 
-IMAGE
+![graphweekly](./graphweekly.jpg)
 
 **Daily notes**
 
 Roam has a feature named ‘daily notes’, this automatically creates a page titled with today’s date, allowing you to scribble notes for that day. I tend to use this a journal entry and a way to track my tasks on a given day.
 
-IMAGE
+![dailysmall](./dailysmall.jpg)
 
 **Sidebar**
 
 The sidebar allows you to view or scroll through multiple pages at once. You can shift-click a bi-directional link or favourited note to open it up.
 
-IMAGE
+![sidebarsmall](./sidebarsmall.jpg)
 
 ### So what?
 
