@@ -1,7 +1,7 @@
 ---
 title: "1984, George Orwell"
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "My notes on 1984 by George Orwell"
 genre:
     - fiction
 minread: 2
