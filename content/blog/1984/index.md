@@ -16,17 +16,16 @@ That quote stuck with me after reading this novel, particularly because several 
 
 I put off reading this book for a long while and I immediately came to regret that decision. Within the first 50 pages, the horror of the dystopia begins to set in and I couldn't stop turning pages. It both terrified and excited me. 
 
-The more I thought about this novel the more I understood. I'm shocked by the number of parallels that can be drawn between this novel and modern-day society. Not only in countries that have adopted an authoritarian political ideology, but also in the west. Mainstream media and social media platforms threaten our capacity for freethinking, 
+The more I thought about this novel the more I understood. I'm shocked by the number of parallels that can be drawn between this novel and modern-day society. Not only in countries that have adopted an authoritarian political ideology, but also in the west. Mainstream and social media platforms threaten our capacity for freethinking, 
 commercial and political interests influence the messaging, elected officials misrepresent the truth, government agencies attempt to and sometimes do invade the privacy of the individuals. Our digital privacy becomes more at risk as data becomes the new age oil. 
 
-1984 is a political statement, a simple warning to mankind. Orwell must've felt society began to assault personal freedom, failing to defend our most precious right, the right to have our own thoughts. He wasn't wrong.
+1984 is a political statement, a simple warning to mankind. Orwell must've felt society beginning to assault his personal freedom, failing to defend our most precious right, the right to have our own thoughts. He wasn't wrong.
 
-I read that Orwell intended to name the book 'The Last Man in Europe' as a tribute to the quality that distinguished man from the world around him, namely his ability to think for himself.
+I read that Orwell intended to name the book 'The Last Man in Europe', as a tribute to the quality that distinguished man from the world around him, namely his ability to think for himself.
 
 The relationship between Winston and Julia took me by surprise, making it all the more enticing. Orwell lures you into a seemingly hopeful drop in an otherwise harrowing pond. Suffice to say it doesn't last very long, but makes for a wicked read. 
 
 I found the reading of the book gifted to Winston to be a little mundane and skipped large parts of it, but that didn't stop me from reading until the end. 
-
 
 > 'In a free society, it is not always important that individuals reason well, it is
 > sufficient that they reason; from their individual thought, freedom is born.' - **Montesquieu**
