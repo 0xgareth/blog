@@ -48,7 +48,7 @@ const Posts = ({ data, location }) => {
         <h3>Notes</h3>
       </div>
       <p>
-        This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/programming'}>programming</Link>, mindset, fitness, and <Link style={{ boxShadow: `none` }} to={'/tags/productivity'}>productivity</Link>.
+        This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/programming'}>programming</Link>, technology, business, and <Link style={{ boxShadow: `none` }} to={'/tags/productivity'}>productivity</Link>.
       </p>
 
       {/* links */}
