@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/business/","result":{"data":{"site":{"siteMetadata":{"title":"GARETH VEALE"}},"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/hello-world/"},"frontmatter":{"title":"Hello World","date":"May 01, 2015"}}}]}},"pageContext":{"tag":"business"}}}
