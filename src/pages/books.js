@@ -37,7 +37,9 @@ const PostsByDate = ({ data, location }) => {
         <p>
         <Link style={{ boxShadow: `none` }} to={'/genre/fiction'}>→ Fiction</Link>
         </p>
-
+        <p>
+        <Link style={{ boxShadow: `none` }} to={'/genre/military-history'}>→ Military History</Link>
+        </p>
         <p>
         This page shares notes i've taken from some of the more recent books i've read. These are not intended to be book reviews/essays, simply some rough thoughts I had of the book, serving as a reference, and useful if one wishes to compare ideas or opinions. I've given each a rating out of 10 on how likely I am to recommend it to others.
         </p>
