@@ -58,7 +58,7 @@ const PostsByDate = ({ data, location }) => {
             <ol key={slug}>
               <Link to={slug}>{title}</Link>
               <br/>
-          <small>{node.frontmatter.date} • {node.frontmatter.minread} min read <span role="img" aria-label="coffee">☕</span> • {node.frontmatter.rating}/10</small>
+          <small>{node.frontmatter.date} • {node.frontmatter.minread} min read <span role="img" aria-label="coffee">☕</span> • Rating: {node.frontmatter.rating}/10</small>
             </ol>
           )
         })}
