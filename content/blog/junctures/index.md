@@ -2,7 +2,7 @@
 title: "Junctures"
 date: "2020-11-10T22:40:32.169Z"
 description: "What's next?"
-minread: 5
+minread: 2
 type: blog
 tags: 
   - life
