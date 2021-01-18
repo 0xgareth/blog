@@ -1,6 +1,6 @@
 ## 🚀 My blog
 
-This is repo for my personal blog, which can be found at https://garethveale.dev/. 
+This is the repo for my personal blog, which can be found at https://garethveale.dev/. 
 
 This is built using the Gatsby blog starter template, which can be found here https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog.
 
