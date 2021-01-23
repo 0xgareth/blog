@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[GARETH VEALE.]]></title><description><![CDATA[Gareth Veale.]]></description><link>https://garethveale.dev</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Jan 2021 08:50:33 GMT</lastBuildDate><item><title><![CDATA[Junctures]]></title><description><![CDATA[You’ll agree this year has been an odd one, COVID-19 has put a lot of things into perspective. It’s hard to put into words exactly what they…]]></description><link>https://garethveale.dev/junctures/</link><guid isPermaLink="false">https://garethveale.dev/junctures/</guid><pubDate>Tue, 10 Nov 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;You’ll agree this year has been an odd one, COVID-19 has put a lot of things into perspective. It’s hard to put into words exactly what they are, however I feel it’s altered the trajectory of my life. Prior to the pandemic, I had a rough idea of what I wanted from my career/life/goals - but on refelection, not really. Through this extended period of isolation and working from home, I’ve spent a lot of time pondering what it is I want, and how I’d like to go about it. One thing is clear, I hope to get as much fulfillment on the way as possible.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[GARETH VEALE.]]></title><description><![CDATA[Gareth Veale.]]></description><link>https://garethveale.dev</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 Jan 2021 18:28:51 GMT</lastBuildDate><item><title><![CDATA[Dune, Frank Herbert]]></title><description><![CDATA[I read the first part of this sci-fi series in 2020, during the first lockdown in the UK. It’s one of few books that I couldn’t put down…]]></description><link>https://garethveale.dev/dune/</link><guid isPermaLink="false">https://garethveale.dev/dune/</guid><pubDate>Sat, 23 Jan 2021 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I read the first part of this sci-fi series in 2020, during the first lockdown in the UK. It’s one of few books that I couldn’t put down. This series is at the cross-section of science, philosophy, technology, politics, and war. There’s tons of themes, ranging from geology to conciousness, through to psychology and epistomology.&lt;/p&gt;
+&lt;p&gt;I’m almost finished with the second part - Dune Messiah - and am delighted it’s as good as the first. &lt;/p&gt;
+&lt;p&gt;Though I haven’t read Game of Thrones, I get the impression a lot of the themes are drawn from these novels (the first part was written in 1965). &lt;/p&gt;
+&lt;p&gt;The language can be quite challenging at times, which I appreciate, and am glad I’m reading the second part on my kindle (the dictionary feature is 👌 ).&lt;/p&gt;
+&lt;p&gt;I’m not even going to say if you enjoy sci-fi read this, if you enjoy reading, read this.&lt;/p&gt;
+&lt;p&gt;There’s a movie being released this year, with a huge cast (and Hans Zimmer scored), based on the first half of the first book, giving you another reason to read it. &lt;/p&gt;
+&lt;p&gt;Some of my favourite quotes from the second book are below, even these demonstrate how well written these books are - strong 10/10.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Belief can be manipulated. Only knowledge is dangerous.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear …”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“No matter how exotic human civilization becomes, no matter the developments of life and society nor the complexity of the machine/human interface, there always come interludes of lonely power when the course of humankind, the very future of humankind, depends upon the relatively simple actions of single individuals.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“There’s but a thin line between many an enemy and many a friend,”&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Moore's Law - is it dead?]]></title><description><![CDATA[What is Moore’s law? Is it dead? (And why this matters) In case you weren’t aware, it’s 2020. Computer technology has been accelerating…]]></description><link>https://garethveale.dev/moores-law/</link><guid isPermaLink="false">https://garethveale.dev/moores-law/</guid><pubDate>Sat, 23 Jan 2021 22:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;What is Moore’s law? Is it dead? (And why this matters)&lt;/h3&gt;
+&lt;p&gt;In case you weren’t aware, it’s 2020. Computer technology has been accelerating rapidly for decades. How can we explain this growth? Is this rate of change ever going to slow? Introducing Moore’s law.&lt;/p&gt;
+&lt;p&gt;This was an observation by Gordon Moore in 1965, stating that the number of transistors in a silicon chip doubles every year. As you can see, this rate of acceleration led to exponential growth.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/59c9c855cf1594c01aeca9cf9c7ccefe/79ee6/transistor.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAABrUlEQVQoz42SW26cMBSG2WIfu41uIC9dQ/dUqS+R0qrSKEoyzAzGHgy2j2/YQH9Dm6aJiGrBsfnNZ59bxVvWCSGvV962rGkulzPnbXO+YMU5L8Ll3DTNqa5bxoSA1g5Df/P5y4ePnypudC1lqxU5l8ZxjLGYMq+LGFNRf+uw+ILS3D883t5VgsyxlyaGeVnwvDPABu+MdYcjk0pDqfwYlbdjzviYd8Y0TT4EpdT3++O3n49f7w6MMTIEeLwSwbk9NKWktOZd/9TwHw+nmgnnrDEmhFDFnKS1O/AyzbP3nnFxqNnTmVnSRf0TYJVy7ndgeIsUCdmza2/IarIpZbAbX+A8zdK+cXvLUErdoE7w03vcMb3eXyrMg3d/4VVFnKiMIqsMAXveeQ3j1c/wum2I5KAGQznnlVw2V+e3N+MtiQO8+qmt67UJ40jW5bV+PsY8Tbuwi9GXTkJJTDdoJAah4vfxRSKmF/YfGKVGNpmQvJMAcM3yf6PA8Mp5F3woDRgD+hlxWOfQVSiytVg62E3f7BZRZV0g8kRoGoLHqzWb1esATwTdeF8wjyPXI3DTLzXjZO0czVXXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;transistor&quot;
+        title=&quot;transistor&quot;
+        src=&quot;/static/59c9c855cf1594c01aeca9cf9c7ccefe/fcda8/transistor.png&quot;
+        srcset=&quot;/static/59c9c855cf1594c01aeca9cf9c7ccefe/12f09/transistor.png 148w,
+/static/59c9c855cf1594c01aeca9cf9c7ccefe/e4a3f/transistor.png 295w,
+/static/59c9c855cf1594c01aeca9cf9c7ccefe/fcda8/transistor.png 590w,
+/static/59c9c855cf1594c01aeca9cf9c7ccefe/efc66/transistor.png 885w,
+/static/59c9c855cf1594c01aeca9cf9c7ccefe/c83ae/transistor.png 1180w,
+/static/59c9c855cf1594c01aeca9cf9c7ccefe/79ee6/transistor.png 3133w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;But what do transistors and silicon chips have to do with anything? Well, this revolutionized computing in the last 50 years, making technology ubiquitous, and shaping the world as we know it. Why is that? Well squeezing more transistors onto a chip (the brain of your smartphone or computer), gives you speed, and a reduction in required power for the same level of processing (an extreme oversimplification, but you get the idea).&lt;/p&gt;
+&lt;p&gt;So far, this law has stood the test of time. Moore revised the forecast to a rate of every two years in 1975, and has proven accurate time and again. The law is said to be responsible for technological change, acting as a guide for the semiconductor industry, in long term research and development.&lt;/p&gt;
+&lt;p&gt;Just to remind you how far we’ve come, the Intel 4004 chip released in 1971 had 2,250 transistors and supported 4kb of memory. The popular AMD Ryzen 7 3700X has 3.8 million transistors, and supports up to 128 GB (a whopping 128,000,000kb)! Not only has this change led to increases in computing power, but squeezing transistors into smaller chips has enabled the explosion of smartphones. Modern-day smartphones have orders of magnitude more power than supercomputers in 1960.&lt;/p&gt;
+&lt;p&gt;Though this seems a law of physics, it’s really a law of economics. It tells us that each new chip will have twice the transistors, and therefore compute the capability of the previous generation, at the same cost of production.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;So what? We know technology has changed a lot - what’s your point?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Well, in recent years, it’s claimed Moore’s law has begun to slow. If this is true, this could lead to stagnant technological progression. No bigger and better iPhones. &lt;a href=&quot;http://www.itrs2.net/uploads/4/9/7/7/49775221/irc-itrs-mtm-v2_3.pdf&quot; target=&quot;_blank&quot;&gt;According to a report by ITRS&lt;/a&gt; (roadmap for semiconductors) - which includes Intel and Samsung - transistors may stop shrink as soon as 2021. It will therefore cease to be economically viable to make them smaller, holding Moore’s law. It makes sense as well right? We can only reduce a physical transistor down to a point.&lt;/p&gt;
+&lt;p&gt;The current cadence of change has certainly changed (known as the shrink factor), this used to be 2x every 2 years, it’s now roughly (0.6). This equates to roughly 1/.6 more transistors every 2 years. However, as Jim Keller points out (legendary chip designer), there are thousands of innovations that go into the advancements of chips. Each of which has its own diminishing return curves. Therefore, each of their innovations reach a point of plateau. At which point, other innovations take precedence/new inventions come along.&lt;/p&gt;
+&lt;p&gt;How about the question of how small can a transistor be? Well, modern transistors are roughly 1000 x 1000 x 1000 atoms small. Quantum effects come into play roughly 2^10, so in theory, we could reach 10 x 10 x 10 (1m times smaller). We’ve all heard about quantum computing, right?
+Further, the method of shrinking is one thing. However, there are thousands of technologies involved. Purely shrinking has not yet reached the laws of physics. Neglecting to mention this process involves chemistry, material science, geometry, meteorology, etc. Additionally, advancements in computing power don’t only come through hardware advancements. Not to mention the fact that AI has exploded, who knows what interpreting data around computer processing and hardware capabilities could bring.&lt;/p&gt;
+&lt;p&gt;So what’s the answer? Well, nobody knows. Perhaps it depends on which glass you drink from. Personally, I’m hopeful technology won’t stop anytime soon.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Junctures]]></title><description><![CDATA[You’ll agree this year has been an odd one, COVID-19 has put a lot of things into perspective. It’s hard to put into words exactly what they…]]></description><link>https://garethveale.dev/junctures/</link><guid isPermaLink="false">https://garethveale.dev/junctures/</guid><pubDate>Tue, 10 Nov 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;You’ll agree this year has been an odd one, COVID-19 has put a lot of things into perspective. It’s hard to put into words exactly what they are, however I feel it’s altered the trajectory of my life. Prior to the pandemic, I had a rough idea of what I wanted from my career/life/goals - but on refelection, not really. Through this extended period of isolation and working from home, I’ve spent a lot of time pondering what it is I want, and how I’d like to go about it. One thing is clear, I hope to get as much fulfillment on the way as possible.&lt;/p&gt;
 &lt;p&gt;I’m considering this point in my life to be one of those you look back on, and realise it was at that stage you could have taken a left, or a right. I recently moved in with one of my closest friends from school, we think the same, share the same interests, and have the same vision. Additionally, since starting on a grad scheme out of uni, I entertained the notion of moving into a trading/automated trading role, but have soon come to realise that won’t satisfy my desire for independence. I’m excited at the prospect of what’s ahead, but I can’t lie I’m beginning to grow impatient. I’m 26, which i’m aware is young, but I have a long, long road ahead to get to where I want to be. I haven’t figured everything out yet, but one thing is for sure - I want to build something of my own, and prepared to continue learning on the way.&lt;/p&gt;
 &lt;p&gt;I plan to start documenting this journey as it may prove to be useful for some/entertaining for others. I plan to be as transparent as possible, which may not serve me well in some cases, but c’est la vie…&lt;/p&gt;
 &lt;p&gt;Rest of 2020&lt;/p&gt;
