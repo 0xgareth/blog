@@ -72,10 +72,10 @@ const Layout = ({ location, title, children }) => {
         >
           <IconContext.Provider value={{ size: '2em', style: { textDecoration: 'none' } }}>
             <div>
-              <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-              <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-              <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="mailto:gareth@garethveale.dev" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="mailto:gareth@garethveale.dev" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
             </div>
           </IconContext.Provider>
           </div>
@@ -144,10 +144,10 @@ const Layout = ({ location, title, children }) => {
       >
         <IconContext.Provider value={{ size: '2em', style: { textDecoration: 'none' } }}>
           <div>
-            <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-            <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-            <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a style={{ marginRight: '2em', textDecoration: 'None', color: '#363636' }} href="mailto:gareth@garethveale.dev" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a style={{ marginRight: '2em', textDecoration: 'None' }} href="mailto:gareth@garethveale.dev" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
           </div>
         </IconContext.Provider>
       </div>
