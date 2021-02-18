@@ -1,4 +1,11 @@
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
 a {
+    /*color:#919191;**/
+    /*color:white;*/
     color:#0FA3B1;
     text-decoration: none;
 }
@@ -7,26 +14,27 @@ h1 {
   margin: 0em;
 }
 
+small {
+  color:#919191;
+}
+
 .react-icons {
   text-decoration: none;
 }
 
 body.dark-mode {
-  background-color: #141414;
-  color: #fff;
+  background-color: white;
+  color:black;
 }
 
 body.dark-mode a {
-  color: #fff;
+  color:#0FA3B1;
 }
 
 body.dark-mode small {
-  color:#919191;
+  color:black;
 }
 
-body.dark-mode Link {
-  color:#919191;
-}
 
 body.dark-mode blockquote {
   color: hsla(0,0%,100%,.9);

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Bio from "./bio"
 import "./layout.css"
 import { IconContext } from "react-icons"
-import { FaGithub, FaLinkedinIn, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaEnvelope, FaYoutube } from "react-icons/fa";
 import { rhythm, scale } from "../utils/typography"
 import useDarkMode from "use-dark-mode"
 import Switch from "react-switch"
@@ -73,6 +73,7 @@ const Layout = ({ location, title, children }) => {
           <IconContext.Provider value={{ size: '2em', style: { textDecoration: 'none' } }}>
             <div>
               <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://github.com/garethiv" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+              <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.youtube.com/channel/UC7bwB56O3Vqk1tA3zVSJ_5Q" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
               <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://www.linkedin.com/in/garethveale/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
               <a style={{ marginRight: '2em', textDecoration: 'None' }} href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a style={{ marginRight: '2em', textDecoration: 'None' }} href="mailto:gareth@garethveale.dev" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
