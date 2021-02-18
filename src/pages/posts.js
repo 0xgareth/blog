@@ -48,7 +48,7 @@ const Posts = ({ data, location }) => {
         <h3>Notes</h3>
       </div>
       <p>
-        This page shares my notes about <Link style={{ boxShadow: `none` }} to={'/tags/programming'}>programming</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/technology'}>technology</Link>, <Link style={{ boxShadow: `none` }} to={'/tags/reading'}>reading</Link>, and my life.
+        This page shares my notes about <Link style={{  }} to={'/tags/programming'}>programming</Link>, business, finance, <Link style={{  }} to={'/tags/technology'}>technology</Link>, and <Link style={{ }} to={'/tags/reading'}>reading</Link>.
       </p>
 
       {/* links */}
@@ -61,7 +61,7 @@ const Posts = ({ data, location }) => {
           padding: 0,
         }}>
         <p style={{marginBottom:'0em'}}>→ 
-          <Link style={{ boxShadow: `none` }} to={'/posts-by-date'}>
+          <Link style={{  }} to={'/posts-by-date'}>
           Notes by date
           </Link>
         </p>

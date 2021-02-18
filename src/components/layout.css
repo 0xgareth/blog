@@ -1,30 +1,38 @@
 a {
     color:#0FA3B1;
     text-decoration: none;
-  }
+}
   
-  h1 {
-    margin: 0em;
-  }
-  
-  .react-icons {
-    text-decoration: none;
-  }
-  
-  body.dark-mode {
-    background-color: #141414;
-    color: #fff;
-  }
-  
-  body.dark-mode a {
-    color: #fff;
-  }
-  
-  body.dark-mode blockquote {
-    color: hsla(0,0%,100%,.9);
-    border-left: 0.32813rem solid hsla(0,0%,100%,.9);
-  }
-  
-  body.dark-mode cite {
-    color: hsla(0,0%,100%,.9);
-  }
+h1 {
+  margin: 0em;
+}
+
+.react-icons {
+  text-decoration: none;
+}
+
+body.dark-mode {
+  background-color: #141414;
+  color: #fff;
+}
+
+body.dark-mode a {
+  color: #fff;
+}
+
+body.dark-mode small {
+  color:#919191;
+}
+
+body.dark-mode Link {
+  color:#919191;
+}
+
+body.dark-mode blockquote {
+  color: hsla(0,0%,100%,.9);
+  border-left: 0.32813rem solid hsla(0,0%,100%,.9);
+}
+
+body.dark-mode cite {
+  color: hsla(0,0%,100%,.9);
+}

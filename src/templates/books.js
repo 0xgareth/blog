@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             {post.frontmatter.title}
           </h2>
-          <p
+          <small
             style={{
               ...scale(-1 / 5),
               display: `block`,
@@ -38,7 +38,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             Date: {post.frontmatter.date}
-          </p>
+          </small>
           <p
             style={{
               ...scale(-1 / 5),

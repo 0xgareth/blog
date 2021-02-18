@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             {post.frontmatter.title}
           </h2>
-          <p
+          <small
             style={{
               ...scale(-1 / 5),
               display: `block`,
@@ -35,7 +35,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             {post.frontmatter.date} • {post.frontmatter.minread} min read  ☕
-          </p>
+          </small>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
