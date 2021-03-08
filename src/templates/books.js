@@ -39,7 +39,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             Date: {post.frontmatter.date}
           </small>
-          <p
+          <small
             style={{
               ...scale(-1 / 5),
               display: `block`,
@@ -47,8 +47,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             Rating: {post.frontmatter.rating}/10
-          </p>
-          <p
+          </small>
+          <small
             style={{
               ...scale(-1 / 5),
               display: `block`,
@@ -56,8 +56,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             Date published: {post.frontmatter.published}
-          </p>
-          <p
+          </small>
+          <small
             style={{
               ...scale(-1 / 5),
               display: `block`,
@@ -65,7 +65,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             Genre: {formattedGenre}
-          </p>
+          </small>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr

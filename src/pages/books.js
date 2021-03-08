@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 const PostsByDate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -32,7 +31,7 @@ const PostsByDate = ({ data, location }) => {
             <h3>Books</h3>
         </div>
         <p>
-        <Link style={{ boxShadow: `none` }} to={'/books-by-date'}>> Sort by date</Link>
+        <Link style={{ boxShadow: `none` }} to={'/books-by-date'}>→ Sort by date</Link>
         </p>
         <p>
         <Link style={{ boxShadow: `none` }} to={'/genre/fiction'}>→ Fiction</Link>
