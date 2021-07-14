@@ -40,11 +40,11 @@ const PostsByDate = ({ data, location }) => {
         <Link style={{ boxShadow: `none` }} to={'/genre/military-history'}>→ Military History</Link>
         </p>
         <p>
-        This page shares notes i've taken from some of the more recent books i've read. These are not intended to be book reviews/essays, simply some rough thoughts I had of the book, serving as a reference, and useful if one wishes to compare ideas or opinions. I've given each a rating out of 10 on how likely I am to recommend it to others.
+        This page shares notes i've taken from some of the more recent books i've read. These are not intended to be book reviews/essays, just some rough thoughts, serving as a reference, and useful if for comparing ideas or opinions. I've given each a rating out of 10 on how likely I am to recommend it to others.
         </p>
 
         <p>
-        Below the notes are sorted by their ratings in descending order. You may sort by date read, or by genre above.
+        Notes are sorted by rating in descending order.
         </p>
 
 

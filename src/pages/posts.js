@@ -47,11 +47,7 @@ const Posts = ({ data, location }) => {
       <div style={{  }}>
         <h3>Notes</h3>
       </div>
-      <p>
-        This page shares my notes on <Link style={{  }} to={'/tags/programming'}>programming</Link>, business, finance, <Link style={{  }} to={'/tags/technology'}>technology</Link>, and <Link style={{ }} to={'/tags/reading'}>reading</Link>.
-      </p>
 
-      {/* links */}
       <div 
         style={{ 
           display: `flex`,
@@ -66,6 +62,27 @@ const Posts = ({ data, location }) => {
           </Link>
         </p>
       </div>
+      
+      <div style={{  }}>
+        <h3>Topics</h3>
+      </div>
+
+      {/* links */}
+      <p style={{marginBottom:'0em'}}>→ 
+          <Link style={{  }} to={'/tags/programming'}>
+          programming
+          </Link>
+      </p>
+      <p style={{marginBottom:'0em'}}>→ 
+          <Link style={{  }} to={'/tags/technology'}>
+          technology
+          </Link>
+      </p>
+      <p style={{marginBottom:'0em'}}>→ 
+          <Link style={{  }} to={'/tags/reading'}>
+          reading
+          </Link>
+      </p>
 
       <ul>
       {/* posts */}

@@ -37,6 +37,9 @@ const PostsByDate = ({ data, location }) => {
         <p>
         <Link style={{ boxShadow: `none` }} to={'/genre/fiction'}>→ Fiction</Link>
         </p>
+        <p>
+        <Link style={{ boxShadow: `none` }} to={'/genre/military-history'}>→ Military History</Link>
+        </p>
 
         <p>
         This page shares notes i've taken from some of the more recent books i've read. Similar to Derek Sivers i've given each a rating out of 10 on how likely I am to recommend it to others.
