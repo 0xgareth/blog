@@ -32,7 +32,7 @@ const PostsByDate = ({ data, location }) => {
             <h3>Books</h3>
         </div>
         <p>
-        <Link style={{ boxShadow: `none` }} to={'/books'}>> Sort by rating</Link>
+        <Link style={{ boxShadow: `none` }} to={'/books'}>→ Sort by rating</Link>
         </p>
         <p>
         <Link style={{ boxShadow: `none` }} to={'/genre/fiction'}>→ Fiction</Link>
