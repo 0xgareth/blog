@@ -60,7 +60,7 @@ const Layout = ({ location, title, children }) => {
         >
           <Link to={`/posts`}>Notes →</Link>
 
-          <Link to={`/books`}>← Books</Link>
+          <Link to={`/books`}>← Book notes</Link>
         </div>
         <br/>
         <br/>

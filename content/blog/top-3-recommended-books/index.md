@@ -8,7 +8,7 @@ tags:
   - reading
 ---
 
-I recently made a [video](https://www.youtube.com/watch?v=i2AFJoB8RVA&t=237s) about the top 3 books I recommend everyone take the time to read and absorb. I made this selection based on the level of impact these books had on my life. Firstly, by shaping how I think. Secondly, by teaching me lessons I feel are invaluable, that I find myself continuously referring back to. Below are my brief thoughts on what I believe you can expect from each. 
+Below are 3 books I recommend everyone take the time to read and absorb. I made this selection based on the level of impact these books had on my life. Firstly, by shaping how I think. Secondly, by teaching me lessons I feel are invaluable, that I find myself continuously referring back to. Below are my brief thoughts on what I believe you can expect from each. 
 
 ### Meditations, Marcus Aurelius (Gregory Hays translation)
 
