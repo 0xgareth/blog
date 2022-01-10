@@ -74,11 +74,6 @@ const Posts = ({ data, location }) => {
           </Link>
       </p>
       <p style={{marginBottom:'0em'}}>→ 
-          <Link style={{  }} to={'/tags/technology'}>
-          technology
-          </Link>
-      </p>
-      <p style={{marginBottom:'0em'}}>→ 
           <Link style={{  }} to={'/tags/reading'}>
           reading
           </Link>
